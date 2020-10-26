@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="creat-canvas.js"></script>
+    <script src="creat-snake.js"></script>
+    <script src="creat-point.js"></script>
+    <script src="creat-obstacle.js"></script>
+
+</head>
+<body>
+<canvas id="mycanvas" width="600" height="600" style=" border:1px solid black;" ></canvas>
+<img id="img-mussroom" src="mussroom.png" height="30" width="30" alt="img"/>
+<img id="img-snake" src="snake.png" height="30" width="30" alt="img"/>
+<img id="img-point" src="point.png" height="30" width="30" alt="img"/>
+</body>
+<script>
+    let snak= new Snake(30,30)
+    snak.update()
+    snak.move();
+</script>
+</html>
